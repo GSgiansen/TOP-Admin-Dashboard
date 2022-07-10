@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 body{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(5,1fr);
     font-family: 'Noto Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+#sidebar{
+    background-color: royalblue;
+    grid-row: 1/6;
+}
+
+#header{
+    grid-column: 2/6;
+    background-color: white;
+}
+
+#main-content{
+    background-color: azure;
+    grid-row:2/6;
+    grid-column:2/6;
 }
