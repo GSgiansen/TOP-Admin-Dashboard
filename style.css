@@ -25,6 +25,7 @@ body{
     color: white;
 }
 .dashboard{
+    padding-top: 15px;
     display: grid;
     grid-template-columns: 1fr 5fr;
     padding-left: 10px;
@@ -41,8 +42,55 @@ body{
 
 
 #header{
+
     grid-column: 2/6;
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    align-items: center;
+}
+.searchbar{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 24px 300px;
+    grid-template-rows: 24px;
+    column-gap: 15px;
+}
+#actlbar{
+    background-color:grey;
+    border: none;
+    border-radius: 40px;
+}
+.dp{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.acctdetails{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 24px 50px 100px;
+    grid-template-rows: 50px;
+    justify-content: right;
+    align-items: center;
+    margin-right: 25px;
+    font:800;
+}
+.actionstaken{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#new,#upload,#share{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(38, 75, 189);
+    color: white;
+    border: none;
+    border-radius: 40px;
+
+
 }
 
 #main-content{
