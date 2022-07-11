@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
 
 body{
     margin: 0px;
@@ -42,7 +42,7 @@ body{
 
 
 #header{
-
+    margin-left: 25px;
     grid-column: 2/6;
     background-color: white;
     display: grid;
@@ -51,14 +51,14 @@ body{
     align-items: center;
 }
 .searchbar{
-    margin-left: 25px;
+    
     display: grid;
     grid-template-columns: 24px 300px;
     grid-template-rows: 24px;
     column-gap: 15px;
 }
 #actlbar{
-    background-color:grey;
+    background-color: rgb(200, 204, 204);
     border: none;
     border-radius: 40px;
 }
@@ -75,7 +75,31 @@ body{
     justify-content: right;
     align-items: center;
     margin-right: 25px;
-    font:800;
+    font-weight:900;
+}
+
+#bigdp{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.welcomemsg{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 15px;
+    align-items: center;
+}
+#welcome{
+    display: grid;
+    grid-template-rows: 12px 32px;
+    row-gap: 5px;
+}
+#hi{
+    font-size: 12px;
+}
+#clam{
+    font-weight:900;
+    font-family: 'Noto Sans', sans-serif;
 }
 .actionstaken{
     grid-column: 2;
@@ -83,7 +107,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 #new,#upload,#share{
-    height: 50px;
+    height: 30px;
     width: 100px;
     background-color: rgb(38, 75, 189);
     color: white;
@@ -94,7 +118,50 @@ body{
 }
 
 #main-content{
-    background-color: azure;
+    
+    background-color: rgb(200, 204, 204);
     grid-row:2/6;
     grid-column:2/6;
+    padding-top: 10px;
+    padding-left: 15px;
+
+}
+
+#main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: stretch;
+}
+.task{
+    border-radius: 8px;
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    border-left-style:solid;
+    border-left-width: 10px;
+    border-color: rgb(198, 167, 90);
+    white-space: initial;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 50px;
+    
+}
+.listimages{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 24px 24px;
+    gap: 40px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
 }
